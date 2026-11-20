@@ -1,3 +1,5 @@
+Aim: Solve tipping problem using fuzzy logic
+
 #pip install scikit-fuzzy numpy matplotlib
 import numpy as np
 import skfuzzy as fuzz
