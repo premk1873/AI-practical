@@ -1,0 +1,48 @@
+Code: main.py
+import aiml
+kernel = aiml.Kernel()
+kernel.learn("std-startup.xml")
+kernel.respond("load aiml b")
+while True:
+ input_text = input(">Human: ")
+ response = kernel.respond(input_text)
+ print(">Bot: "+response)
+
+std-startup.xml
+<aiml version="1.0.1" encoding="UTF-8">
+ <category>
+ <pattern> LOAD AIML B </pattern>
+ <template>
+ <learn>basic_chat.aiml</learn>
+ </template>
+ </category>
+</aiml>
+
+basic_chat.aiml
+<aiml version="1.0.1" encoding="UTF-8"> 
+<!-- basic_chat.aiml -->
+ <category>
+ <pattern>HELLO </pattern>
+ <template>
+ Well, hello User
+ </template>
+ </category>
+ <category>
+ <pattern>What Are You</pattern>
+<template>
+I’m a bot
+ </template>
+ </category>
+ <category>
+ <pattern> What do you do</pattern>
+ <template>
+ I’m here to annoy you
+ </template>
+ </category>
+ <category>
+ <pattern> Who I AM</pattern>
+ <template>
+ You are user, and you work as a Web Developer...
+ </template>
+ </category>
+</aiml>
