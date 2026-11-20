@@ -1,4 +1,4 @@
-#pip3 install scikit-fuzzy
+#pip install scikit-fuzzy numpy matplotlib
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
