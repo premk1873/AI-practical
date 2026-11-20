@@ -1,0 +1,70 @@
+Code: main.py
+import aiml
+kernel = aiml.Kernel()
+kernel.learn("std-startup.xml")
+kernel.respond("load aiml b")
+while True:
+ input_text = input(">Human: ")
+ response = kernel.respond(input_text)
+ print(">Bot: "+response)
+
+std-startup.xml
+<aiml version="1.0.1" encoding="UTF-8">
+ <category>
+ <pattern> LOAD AIML B </pattern>
+ <template>
+ <learn>basic_chat.aiml</learn>
+ </template>
+ </category>
+</aiml>
+
+basic_chat.aiml
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+ <category>
+ <pattern>HELLO </pattern>
+ <template> hello User </template>
+ </category>
+ <category>
+ <pattern>SUNDAY</pattern>
+ <template> the day of the week before Monday and following
+Saturday, observed by Christian as a day of rest and religious worship;
+ </template>
+ </category>
+ <category>
+ <pattern> Monday</pattern>
+ <template>
+ the day start after Sunday;
+ </template>
+ </category>
+ <category>
+ <pattern> Tuesday</pattern>
+ <template>
+ the day start after Monday;
+ </template>
+ </category>
+ <category>
+ <pattern>Wednesday </pattern>
+ <template>
+ the day start after Tuesday;
+ </template>
+ </category>
+ <category>
+ <pattern>Thursday </pattern>
+ <template>
+ the day start after Wednesday;
+ </template>
+  </category>
+ <category>
+ <pattern> Friday</pattern>
+ <template>
+ the day start after Thursday;
+ </template>
+ </category>
+ <category>
+ <pattern>Saturday </pattern>
+ <template>
+ the day start after Friday;
+ </template>
+ </category>
+</aiml>
