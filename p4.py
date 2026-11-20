@@ -1,3 +1,5 @@
+Aim: Implement joint probability using Python
+
 Card_Colour = input('Enter the Colour of the card: ')
 Card_Number = input('Enter the Number of the card: ')
 
