@@ -1,3 +1,4 @@
+Aim: K-means
 #pip install matplotlib scikit-learn
 
 import matplotlib.pyplot as plt
