@@ -1,3 +1,5 @@
+Aim: Implement Bayes Theorem using Python
+
 P_A = float(input("Enter the Percentage of patients having liver Disease: "))
 P_B = float(input("Enter the Percentage of patients are Alcoholic: "))
 P_B_Given_A = float(input("Enter the Percentage of patients who are Alcoholic if they have liver Disease: "))
