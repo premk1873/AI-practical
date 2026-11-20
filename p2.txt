@@ -1,4 +1,5 @@
-Code: main.py
+Aim: Design a bot using AIMLCode: main.py
+
 pip install aiml
 import aiml
 kernel = aiml.Kernel()
