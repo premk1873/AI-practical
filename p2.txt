@@ -1,4 +1,5 @@
 Code: main.py
+pip install aiml
 import aiml
 kernel = aiml.Kernel()
 kernel.learn("std-startup.xml")
